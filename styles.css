@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --ring: 0 0% 0%; }
+html, body { height: 100%; }
+body { @apply bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100; }
+
+.card { @apply rounded-2xl bg-white shadow-sm border border-slate-200 dark:bg-slate-900 dark:border-slate-800; }
+.card-header { @apply p-4 border-b border-slate-200 dark:border-slate-800; }
+.card-title { @apply text-lg font-semibold; }
+.card-sub { @apply text-sm text-slate-500 dark:text-slate-400; }
+.card-body { @apply p-4; }
+.badge { @apply text-xs px-2 py-1 rounded-full; }
+.badge-ok { @apply bg-emerald-100 text-emerald-800 dark:bg-emerald-900/50 dark:text-emerald-200; }
+.badge-due { @apply bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-200; }
+.badge-overdue { @apply bg-red-100 text-red-700 dark:bg-red-900/50 dark:text-red-200; }
+.badge-unscheduled { @apply bg-slate-100 text-slate-800 dark:bg-slate-800 dark:text-slate-200; }
+
+button.btn { @apply inline-flex items-center gap-2 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 px-3 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 active:translate-y-px; }
+button.btn.primary { @apply bg-slate-900 text-white border-slate-900 hover:bg-black; }
+input, select { @apply rounded-xl border border-slate-300 dark:border-slate-700 px-3 py-2 text-sm bg-white dark:bg-slate-900; }
+label { @apply text-sm font-medium; }
+table { @apply w-full text-sm; }
+th, td { @apply px-3 py-2 align-middle; }
+th { @apply text-left text-slate-500 dark:text-slate-400; }
+tr { @apply border-t border-slate-200 dark:border-slate-800; }
+tr:hover td { @apply bg-slate-50 dark:bg-slate-800; }
+
+.kpi { @apply card p-4; }
+.kpi-value { @apply text-3xl font-bold; }
+.kpi-label { @apply text-sm text-slate-500 dark:text-slate-400; }
